@@ -1,0 +1,20 @@
+================================================================================
+PROMPT: Top area only — header + hero (ChatGPT)
+================================================================================
+Attach desktop comp of **header + hero** (or combined top region) + 02_rules_core.md + 03_rules_layout.md.
+
+CONTEXT
+- PROJECT_NAME — Gulp starter, HTML includes, SCSS partials, **BEM**, pixel match.
+
+TASK
+1. Propose **BEM roots**: separate `header` / `hero` (or single `top` if design merges them) — show final class names.
+2. Output HTML for **header + hero only** — **zero** markup for lower sections.
+3. Desktop notes for implementer: **max content width**, **header height**, **hero min-height or aspect-ratio**, logo box rules.
+4. **Navigation `href` plan**: real URLs, `#section-id` anchors, or staged `#` — list every **planned section id** (kebab-case) for future blocks.
+5. If **transparent header over hero**: say how the hero provides contrast (overlay class, gradient, etc.) — BEM-scoped.
+
+CONSTRAINTS
+- No inline styles; no global selectors; **max-width MQ** only in later passes — here focus on **desktop structure**.
+- **STOP** after top area. Next step: Cursor applies to `src/`, **build**, **commit**, then next block or `prompts/03`.
+
+================================================================================

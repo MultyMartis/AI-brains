@@ -1,0 +1,24 @@
+================================================================================
+PROMPT: Stable handoff document (markdown) for developer / stakeholder
+================================================================================
+Use when layout is **accepted** and **build is green**. PROJECT_NAME: _______________________
+
+TASK
+Produce **markdown** with these sections:
+
+1. **Overview** — page purpose, audience, primary CTA.
+2. **Repo & runtime** — branch or tag; **Node** version if known; commands: install, build, optional watch.
+3. **Source map** — list real `src/` paths: HTML partials, SCSS partials, JS entries for this page. Unknown → `QUESTION:` not fiction.
+4. **Layout contract** — max content width; **breakpoint map** final values.
+5. **Assets** — table: Path | Kind | Final/placeholder | Notes (px, format, license).
+6. **Known limitations** — intentional TODOs, lorem, blocked third-party embeds.
+7. **Deferred enhancements** — bullets only: hovers, sliders, modals, forms, motion — **no code** here.
+8. **15-minute verification** — ≤ **10** checkboxes a developer can run locally.
+
+RULES
+- Professional, compact; **no invented filenames**.
+- Explicit line: **`dist/` generated only via build; never hand-edited.**
+
+STOP — human runs **`templates/final-review-template.md`**, tags if needed. **No `prompts/10` until signed off.**
+
+================================================================================

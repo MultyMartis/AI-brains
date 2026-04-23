@@ -1,0 +1,27 @@
+[TEMPLATE]
+
+TASK TYPE: CREATE_NEW_SECTION
+
+SECTION NAME: [kebab-case]
+PURPOSE: [text]
+
+STRUCTURE:
+- [item]
+
+COMPONENTS:
+- [existing or NONE]
+
+SCSS:
+- create src/scss/sections/_[name].scss
+
+JS:
+- none or minimal
+
+RULES:
+- reusable
+- no layout logic
+
+EXPECTED:
+- create section in partials/sections
+- create matching scss
+- do not connect to page

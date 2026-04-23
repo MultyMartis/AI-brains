@@ -1,0 +1,34 @@
+[TEMPLATE]
+
+TASK TYPE: CREATE_NEW_PAGE
+
+PAGE NAME: [kebab-case]
+PAGE TITLE: [text]
+PAGE PURPOSE: [text]
+PAGE URL ROLE: [main/internal/service]
+
+SECTIONS TO USE:
+- [section]
+
+REUSE COMPONENTS:
+- [component]
+
+NEW SECTIONS:
+- [name or NONE]
+
+SCSS:
+- only required
+
+JS:
+- none or minimal
+
+RULES:
+- one h1
+- valid include chain
+- no placeholders
+
+EXPECTED:
+- create src/pages/[page].html
+- reuse sections if exist
+- create section only if listed
+- no other changes

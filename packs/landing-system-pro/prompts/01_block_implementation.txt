@@ -1,0 +1,27 @@
+================================================================================
+PROMPT: Single block — HTML + BEM (ChatGPT) → then Cursor build
+================================================================================
+Fill placeholders; attach design crop + 02_rules_core.md + 03_rules_layout.md.
+
+CONTEXT
+- Page: PROJECT_NAME (commercial landing / standalone promo; multi-section pages like barel.su follow this same block rhythm).
+- Stack: HTML + SCSS + JS, Gulp, **src only**, **dist from build**, **BEM**, **no inline styles**.
+
+TASK — EXACTLY ONE BLOCK
+- Block title (human label): _______________________
+- Order in page (e.g. 4 of 9): _______
+- BEM root class for this section (slug): _______________________  (e.g. `catalog`, `benefits`)
+
+REQUIREMENTS
+1. Output **only** the HTML for this **one** section (no `<html>`/`<body>` shell unless the starter demands a fragment wrapper — say which).
+2. Root element = **one** BEM block matching the slug above; all classes `block`, `block__el`, `block--mod`.
+3. Use semantic tags; **heading levels** must continue sensibly from sections above (state assumptions if you lack prior context).
+4. Images: `src` paths consistent with our starter, e.g. `assets/img/...` — or describe paths + **object-fit** intent.
+5. In-page anchors: if nav links target this block, set `id="..."` on the root **using kebab-case** and list new IDs.
+6. If this block has **catalog/product cards**, use a **repeatable** card subtree (same BEM inside each item).
+
+AFTER OUTPUT — STOP
+- Do not output the rest of the page.
+- One-line reminder for the human: merge into the correct **src partial**, run **build**, **commit** on `task/<slug>`, file **`templates/block-report-template.md`**.
+
+================================================================================

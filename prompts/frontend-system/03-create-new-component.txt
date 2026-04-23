@@ -1,0 +1,24 @@
+[TEMPLATE]
+
+TASK TYPE: CREATE_NEW_COMPONENT
+
+COMPONENT NAME: [kebab-case]
+PURPOSE: [text]
+
+VARIATIONS:
+- [item] or NONE
+
+SCSS:
+- create src/scss/components/_[name].scss
+
+JS:
+- none or minimal
+
+RULES:
+- small reusable unit
+- no section logic
+
+EXPECTED:
+- create component file
+- create scss file
+- no auto-connection

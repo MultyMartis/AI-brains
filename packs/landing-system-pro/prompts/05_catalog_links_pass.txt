@@ -1,0 +1,26 @@
+================================================================================
+PROMPT: Semantics + links + grids (whole page or listed blocks)
+================================================================================
+Despite the filename “catalog,” use this for **any** page: nav, hero CTAs, **product grids**, footers, legal links.
+
+CONTEXT
+- PROJECT_NAME — layout + type passes done for: PAGE_OR_SECTION: _______________________
+
+ATTACHED
+- Current HTML for that scope (paste or file list).
+
+TASK
+1. **Landmarks**: one sensible `main`, headers/footers, `nav` where appropriate.
+2. **Heading order**: one primary page topic; don’t skip levels without reason.
+3. **Links**: descriptive text; external links: `rel`/`target` per kickoff policy.
+4. **`<a>` vs `<button>`**: navigation → `<a>`; JS-only → `<button type="button">` + accessible name.
+5. **Grids / catalogs**: repeated items use the **same** child BEM pattern (`block__item`, `block__card`, etc.).
+6. Output **minimal** HTML fragments or a clear **before/after diff**; if renaming classes, include a **rename map** table.
+
+OUTPUT
+- Table: Issue | Where | Fix
+- Then corrected HTML snippets only.
+
+STOP — build + commit; then `prompts/06`.
+
+================================================================================

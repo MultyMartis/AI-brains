@@ -1,0 +1,37 @@
+================================================================================
+GIT — local commands (Landing System PRO client repos)
+================================================================================
+Remotes are **optional**. Skip `pull` / `push` if you work **local-only**.
+
+# Start from clean main
+git checkout main
+git status
+# git pull origin main          # only if remote exists
+
+# Branch per unit of work
+git checkout -b task/SHORT_SLUG
+# OR for a wide single pass:
+# git checkout -b pass/SHORT_SLUG
+
+# …edit src/, run build…
+
+git status
+git add PATH_OR_DOT
+git commit -m "feat(block): imperative description"
+
+# Optional tag after stable layout
+git tag -a v-handoff-1.0 -m "Stable layout — PROJECT_NAME"
+
+# Optional push
+# git push -u origin task/SHORT_SLUG
+
+================================================================================
+MESSAGE EXAMPLES
+================================================================================
+feat(hero): desktop structure and background layers
+style(catalog): unify card title spacing across breakpoints
+fix(header): prevent overlap with hero at bp-md
+pass/mq: replace stray breakpoint literals with map tokens
+chore: sync dist after src build (if dist tracked)
+
+================================================================================

@@ -1,0 +1,15 @@
+[TEMPLATE]
+
+TASK TYPE: ADD_SCSS_FOR_SECTION
+
+SECTION: [name]
+
+GOAL:
+[text]
+
+RULES:
+- only this section
+- no global edits
+
+EXPECTED:
+- modify/create _section.scss only

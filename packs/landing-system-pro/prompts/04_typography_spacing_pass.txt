@@ -1,0 +1,24 @@
+================================================================================
+PROMPT: Typography + spacing pass — selected block(s) only
+================================================================================
+Attach type-readable design (specs or panel screenshots) + current HTML/SCSS for BLOCK_LIST.
+
+CONTEXT
+- PROJECT_NAME — desktop layout already approved for these blocks.
+
+TARGET
+- BLOCK_LIST: _______________________
+
+TASK
+1. For each text style **in scope**: font-size, line-height, weight, letter-spacing if visible.
+2. Output **SCSS only** (BEM-nested). Prefer existing **variables/tokens**; if missing, add **temporary variables at top of partial** with `TODO(token): merge to globals`.
+3. Adjust **vertical rhythm** (headline → subcopy → meta → CTA row) — not horizontal grid redesign.
+4. **Do not** change colors/images except **documented** contrast fixes — list separately.
+
+DELIVERABLE
+- SCSS patch
+- 3–6 bullets: **Assumptions / need measurements**
+
+STOP — build + commit; then `prompts/05`.
+
+================================================================================

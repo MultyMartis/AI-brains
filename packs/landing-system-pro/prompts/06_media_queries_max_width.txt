@@ -1,0 +1,25 @@
+================================================================================
+PROMPT: Unify media queries — max-width strategy (project-wide)
+================================================================================
+Fill breakpoint map from kickoff; attach `_breakpoints.scss` (or equivalent) + any partials with raw `@media`.
+
+CONTEXT
+- PROJECT_NAME — **only** `max-width` breakpoints; **single map/variables file** is source of truth.
+
+PROJECT TOKENS (fill)
+- $bp-xl: _____ px
+- $bp-lg: _____ px
+- $bp-md: _____ px
+- $bp-sm: _____ px
+- $bp-xs: _____ px
+- Primary desktop comp width (no MQ): PRIMARY_DESKTOP_PX: _____
+
+TASK
+1. Find **literal** `max-width: NNNpx` (or min-width) in block partials; map to tokens or justify **one** new token.
+2. Output: updated **breakpoint file** + only the **diff hunks** for affected partials.
+3. Short note: **cascade order** (how you avoid double overrides when stacking MQ blocks).
+4. **Do not** redesign mobile layouts here — only **align breakpoints and duplicate rules**; layout tweaks belong in `07` if new.
+
+STOP — build + commit on `pass/unify-mq` or similar; then `prompts/07`.
+
+================================================================================

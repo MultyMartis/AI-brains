@@ -1,0 +1,25 @@
+[TEMPLATE]
+
+TASK TYPE: MODIFY_EXISTING_SECTION
+
+TARGET: [section-name]
+
+GOAL:
+[text]
+
+KEEP:
+- [item]
+
+ALLOW:
+- markup edits
+- class updates
+- scss update
+
+DISALLOW:
+- rename
+- move
+- duplicate
+
+EXPECTED:
+- modify only target section
+- no side effects

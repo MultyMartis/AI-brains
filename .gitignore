@@ -1,0 +1,13 @@
+.DS_Store
+Thumbs.db
+node_modules/
+dist/
+*.log
+.env
+.env.*
+cache/
+exports/
+temp/
+tmp/
+**/.git/
+*/.git

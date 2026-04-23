@@ -1,0 +1,22 @@
+================================================================================
+PROMPT: Desktop layout pass — selected block(s) only
+================================================================================
+Fill PRIMARY_DESKTOP_PX and BLOCK_LIST. Attach desktop design + current HTML/SCSS (paste or paths).
+
+CONTEXT
+- PROJECT_NAME — design width: PRIMARY_DESKTOP_PX (e.g. 1920 / 1440).
+- Stack: Gulp, BEM. **This pass is layout on desktop, not typography tuning, not new breakpoints.**
+
+TARGET
+- Block(s): BLOCK_LIST: _______________________
+
+TASK
+1. Compare to design: columns, gutters, alignment, inner container vs full-bleed background.
+2. Output **SCSS only** for these blocks (nested under each BEM root) unless **minimal HTML wrapper** is required — then show **smallest** HTML diff + matching SCSS.
+3. Tag any guess as `ASSUMPTION:` with px value.
+4. **Do not** add `@media` here unless fixing an obvious desktop-only bug — MQ belongs in `prompts/06` / mobile in `07`.
+5. **Do not** touch blocks outside BLOCK_LIST.
+
+STOP — next human step: build + commit (e.g. `pass/desktop` or per-block `task/`). Then `prompts/04`.
+
+================================================================================

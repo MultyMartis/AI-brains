@@ -1,0 +1,24 @@
+================================================================================
+PROMPT: Final polish — micro fixes only, no new features
+================================================================================
+Attach latest desktop + mobile screenshots (or staging URL notes). PROJECT_NAME must be layout-frozen except for nits.
+
+CONTEXT
+- All blocks present; passes 03–07 done.
+
+TASK
+1. **1–2px-level** alignment within existing BEM — no structural rewrites.
+2. **Token consistency**: radii, shadows, button heights across sections.
+3. **Edge cases**: long nav labels wrap; last row cards align; no stray margins at section boundaries.
+4. Split output into **Ship now** vs **Needs design decision** (table).
+
+OUT OF SCOPE — HARD STOP
+- No **sliders**, **modals**, **scroll animations**, **new JS**, **new sections**.
+- Those belong in **`prompts/10`** after **`prompts/09`**.
+
+DELIVERABLE
+- Per-block micro-patches with **suggested file names** matching our starter.
+
+STOP — build + commit; then `prompts/09` stable handoff.
+
+================================================================================

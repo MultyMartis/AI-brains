@@ -1,0 +1,18 @@
+[TEMPLATE]
+
+TASK TYPE: CONNECT_SECTION_TO_PAGE
+
+PAGE: [page-name]
+SECTION: [section-name]
+
+POSITION:
+- before [section]
+- after [section]
+- replace [section]
+
+RULES:
+- keep include chain valid
+- do not create section
+
+EXPECTED:
+- modify only page file

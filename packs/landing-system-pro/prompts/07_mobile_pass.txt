@@ -1,0 +1,31 @@
+================================================================================
+PROMPT: Mobile / tablet pass — listed blocks or whole page
+================================================================================
+Fill test widths from kickoff. Attach mobile designs **or** explicit “desktop-only” notes + HTML/SCSS for BLOCK_SCOPE.
+
+CONTEXT
+- PROJECT_NAME — MQ tokens already unified.
+
+TEST WIDTHS
+- Large tablet: _____ px
+- Tablet: _____ px
+- Phone: _____ px
+- Small phone: _____ px
+
+SCOPE
+- BLOCK_SCOPE: _______________________ (`all` or comma-separated BEM roots)
+
+TASK
+1. Stack / reflow grids; tune gaps and **horizontal padding** per breakpoint.
+2. **Typography scaling** where design requires; avoid unreadable sizes / clipping.
+3. **Nav**: if markup/JS hooks change, output minimal HTML + SCSS + **hook names** for Cursor (no new libraries).
+4. **Touch targets** ≥ ~44px effective for primary taps.
+5. **Kill `overflow-x`**: hunt fixed widths, large negatives, unbroken strings.
+
+DELIVERABLE
+- SCSS-first; HTML only if needed
+- **8-item** manual test checklist (devtools widths + one real device if possible)
+
+STOP — build + commit; then `prompts/08`.
+
+================================================================================

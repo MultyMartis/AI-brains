@@ -1,0 +1,20 @@
+[TEMPLATE]
+
+TASK TYPE: ADD_JS_MODULE
+
+MODULE NAME: [name]
+TARGET: [section/component/page]
+
+PURPOSE:
+[text]
+
+TRIGGER:
+- load/click/submit
+
+RULES:
+- module only
+- no inline js
+
+EXPECTED:
+- create in src/js/modules
+- connect in main.js if needed

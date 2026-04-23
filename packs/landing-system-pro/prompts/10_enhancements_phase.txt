@@ -1,0 +1,29 @@
+================================================================================
+PROMPT: Single enhancement after stable handoff (ChatGPT)
+================================================================================
+PREREQUISITE: Stable handoff **signed** for PROJECT_NAME. If a layout bug blocks this enhancement, **stop** and request a **layout fix task** instead of patching silently.
+
+SELECT EXACTLY ONE (delete the rest before send)
+[ ] Hover / focus states polish
+[ ] Simple transitions (color/opacity/transform)
+[ ] Slider / carousel (structure + behavior plan)
+[ ] Modal / popup (focus trap, ESC, return focus)
+[ ] Form UX (client-side validation hints only)
+[ ] Light scroll-linked animation
+
+ATTACHED
+- Relevant HTML + SCSS + JS entry for this feature only
+- Motion notes (duration/easing) if applicable
+
+TASK
+1. **Accessibility** for this feature only: keyboard path, focus visibility, **`prefers-reduced-motion`** behavior.
+2. Output **three** fenced blocks if needed: `html`, `scss`, `js` — smallest diff; file path hints in comments on first line.
+3. **Scope**: BEM under agreed root; JS hooks `js-…` **only** if project already uses that pattern — state which.
+4. **Test steps**: 5–8 bullets (include keyboard + one reduced-motion check).
+
+DISCIPLINE
+- **One enhancement per message.** If you find unrelated layout debt, **list it**, do not “fix” it here.
+
+STOP — Cursor implements on `task/<feature>`, **build**, **commit**, short block report.
+
+================================================================================

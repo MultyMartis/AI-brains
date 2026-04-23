@@ -1,0 +1,30 @@
+================================================================================
+SAFETY — Gulp starter landings (Cursor)
+================================================================================
+
+SOURCE VS BUILD
+- Never “fix” production output in **dist/** — fix **src/** and rebuild.
+- Never commit **dist/** that does not match the **src/** that produced it.
+
+DEPENDENCIES
+- **No new npm packages** without explicit user approval in the task.
+- Prefer **native DOM**, **CSS**, and small local helpers over UI frameworks for landings.
+
+REFACTORS
+- **Forbidden unless tasked**: wide rename, ESLint/Prettier on whole repo, “while I’m here” API changes.
+- **BEM renames** across many files = **one dedicated rename task** with search list.
+
+FILES & DATA
+- Do not **delete** images, fonts, or vendor dirs without explicit instruction.
+- Do not put **secrets** (API keys, SMTP, private tokens) into static HTML/JS.
+
+CONFIG FILES
+- Edit **gulpfile / webpack / vite** only when the task names them — not to “optimize” unrelated behavior.
+
+INCLUDES & CASE
+- After path changes, verify includes on **case-sensitive** systems (Linux CI).
+
+UNCERTAINTY
+- If requirements are ambiguous: **one** clarifying question or **two** minimal options — do not guess your way across half the codebase.
+
+================================================================================

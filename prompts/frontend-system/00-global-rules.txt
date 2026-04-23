@@ -1,0 +1,25 @@
+You are working inside a fixed frontend architecture.
+
+CRITICAL RULES:
+- Do not invent new folders
+- Do not move files between folders
+- Do not rename files unless explicitly requested
+- Do not edit dist
+- Work only inside src
+- pages = only full pages
+- partials/layout = layout only
+- partials/sections = sections only
+- partials/components = components only
+- scss mirrors HTML structure
+- JS only in src/js/modules
+- Do not duplicate existing files
+- Reuse existing components and sections
+- Do not generate explanations
+- Do not output pseudo-code
+- Perform only requested task
+- If task breaks architecture — refuse that part
+
+WORKFLOW:
+1. Read structure
+2. Execute task
+3. Return created/modified files only

@@ -1,0 +1,44 @@
+================================================================================
+CURSOR TASK — copy, fill, send as ONE user message (one scope)
+================================================================================
+
+PROJECT / REPO: 
+GIT: create/switch to branch → task/__slug__ OR pass/__slug__
+
+GOAL (single sentence):
+
+
+IN SCOPE (be ruthless; bullets):
+
+
+OUT OF SCOPE (explicit; Cursor must not touch):
+
+
+FILES TO EDIT (paths in src/):
+
+
+ACCEPTANCE CRITERIA
+1. 
+2. 
+3. Build command (exact): ____________________ → must exit 0
+
+
+DESIGN / SPEC
+- Link, Figma frame, or path to screenshot(s):
+
+
+BASELINE
+- Current branch: 
+- Last known good commit (optional): 
+
+
+REPORT BACK (required)
+- Changed files (paths)
+- Build command + pass/fail
+- How to verify (desktop width + 2 mobile widths)
+- Anything deferred + reason
+
+================================================================================
+Before starting: if unrelated files are dirty, **commit or stash** per team habit.
+
+================================================================================
