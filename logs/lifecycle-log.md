@@ -49,6 +49,12 @@
 - git_status: pending
 - next_action: commit and push GitHub cleanup
 
+## MetaBOT n8n workflow draft prepared
+
+- scope: Main Brain
+- affected_area: runtime design
+- next_action: build real n8n workflow
+
 ## 2026-04-24 — MetaBOT LeadInboxProcessor architecture created
 
 - scope: Main Brain / MetaBOT

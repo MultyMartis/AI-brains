@@ -37,6 +37,6 @@
 - workflow_tracker: D:\AI\Projects\Apps\metabot\docs\ai-system\workflow-tracker.md
 - lifecycle_log: D:\AI\Projects\Apps\metabot\docs\ai-system\lifecycle-log.md
 - last_checked: 2026-04-24
-- next_action: prepare n8n workflow draft and Google Sheets DB structure
+- next_action: implement n8n workflow in runtime
 
 ---
