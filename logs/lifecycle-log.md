@@ -17,3 +17,19 @@
 - commit: e184042
 - push_status: pushed to origin/main
 - next_action: update roadmap and decide whether to continue gulp-starter or switch to MetaBOT
+
+## 2026-04-24 — WebGPT Memory Module added
+
+- scope: Main Brain
+- affected_area: AI-brains system
+- files_changed:
+  - system/webgpt-memory-module.md
+  - system/rule-precedence.md
+  - system/ai-brains-system-index.md
+  - system/v2-ai-brains-roadmap.md
+- reason: enable safe chat-to-chat migration and enforce project control through Main Brain
+- executed_by: Cursor Agent
+- git_status: committed and pushed
+- git_repo: https://github.com/MultyMartis/AI-brains.git
+- commit: be17881
+- next_action: visualize updated system architecture (Main Brain v2)
