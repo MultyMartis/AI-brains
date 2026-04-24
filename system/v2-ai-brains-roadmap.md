@@ -9,6 +9,57 @@ Build a global AI system that:
 
 ---
 
+## Strategic direction (MCA AI.Pack)
+
+1. **Main Brain** (`AI-brains`) is the **control layer** for MCA AI.Pack — not an optional doc folder.
+2. **MetaCODE mission** is part of the system; see [metacode-mission.md](metacode-mission.md).
+3. **Lifecycle logging** is **mandatory** for major system and project changes (see standard below).
+4. **Project registry** is **mandatory** for active projects (see standard below).
+5. **Git safety** is required at major checkpoints (see standard below).
+6. **SAFE UNKNOWN MODE** is a **core anti-hallucination rule**: do not invent facts; mark unknowns explicitly.
+7. **Gulp Starter** is **paused** until Main Brain lifecycle controls are finalized.
+8. **Next possible product direction:** **MetaBOT** (after the lifecycle layer is stable).
+
+---
+
+## Current Priority — Main Brain Lifecycle Layer
+
+The current priority is to harden Main Brain before continuing implementation work in projects.
+
+Main Brain must control:
+
+- project registry
+- lifecycle logs
+- Git safety checkpoints
+- rule precedence
+- SAFE UNKNOWN behavior
+- workflow trackers
+- future project brains
+
+This stage is required before scaling to:
+
+- gulp-starter development
+- LAE implementation
+- MetaBOT
+- client/project-specific AI brains
+
+---
+
+## System references (lifecycle layer)
+
+Paths are from the `AI-brains` repository root:
+
+- `system/metacode-mission.md` — [MetaCODE mission](metacode-mission.md)
+- `system/ai-lifecycle-log-standard.md` — [AI lifecycle log standard](ai-lifecycle-log-standard.md)
+- `system/project-registry-standard.md` — [Project registry standard](project-registry-standard.md)
+- `system/git-safety-standard.md` — [Git safety standard](git-safety-standard.md)
+- `system/project-registry.md` — [Project registry](project-registry.md)
+- `logs/lifecycle-log.md` — [Lifecycle log](../logs/lifecycle-log.md)
+- `system/rule-precedence.md` — [Rule precedence](rule-precedence.md)
+- `system/wiring-task-standard.md` — [Wiring task standard](wiring-task-standard.md)
+
+---
+
 ## Stage 1 — Structure (DONE)
 
 D:\AI\
@@ -90,6 +141,7 @@ AI must ALWAYS know:
 
 ## Next Step
 
-1. add roadmap to each project
-2. create project-state files
-3. implement bridge prompts
+1. Finalize Main Brain lifecycle layer (registry, logs, Git checkpoints, rule precedence, SAFE UNKNOWN).
+2. Update per-project roadmaps and project-state when work resumes outside Main Brain.
+3. Choose next build focus after controls are stable: likely **MetaBOT**, or **gulp-starter** when unpaused.
+4. Implement bridge prompts (ChatGPT → Cursor) once context files are mandatory across projects.
