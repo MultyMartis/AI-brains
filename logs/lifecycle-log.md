@@ -77,5 +77,7 @@
 - affected_area: product runtime validation
 - bot: MB-Sales-LeadInboxProcessor-for-Manager-v1-MCA
 - result: Gmail → Parser → Google Sheets works in n8n runtime
-- git_status: pending
+- git_status: committed and pushed (AI-brains registry + lifecycle only)
+- git_repo: https://github.com/MultyMartis/AI-brains.git
+- commit: d9d3f7f
 - next_action: backup n8n workflow and add OpenRouter AI analysis + Telegram notification
