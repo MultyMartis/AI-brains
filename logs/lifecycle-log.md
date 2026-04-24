@@ -33,3 +33,18 @@
 - git_repo: https://github.com/MultyMartis/AI-brains.git
 - commit: be17881
 - next_action: visualize updated system architecture (Main Brain v2)
+
+## 2026-04-24 — Main Brain v2 architecture documented
+
+- scope: Main Brain
+- affected_area: AI-brains documentation / GitHub repository presentation
+- files_changed:
+  - README.md
+  - assets/images/main-brain-v2.png
+  - system/main-brain-v2-architecture.md
+  - system/ai-brains-system-index.md
+  - logs/lifecycle-log.md
+- reason: document the visible architecture of Main Brain v2 and prepare GitHub repository for clean navigation
+- executed_by: Cursor Agent
+- git_status: pending
+- next_action: commit and push GitHub cleanup
