@@ -123,3 +123,23 @@ After each task, stop and report:
 - files not changed
 - build status if checked
 - next recommended task
+
+## Project control rule
+
+All projects must be:
+
+- created through Main Brain
+- registered in project-registry.md
+- controlled via workflow tracker
+- logged via lifecycle-log
+
+Forbidden:
+
+- creating projects outside Main Brain system
+- modifying project structure manually without registration
+- working on unregistered projects
+
+If project is not registered:
+
+→ STOP
+→ request registration

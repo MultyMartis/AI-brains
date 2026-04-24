@@ -35,6 +35,13 @@ Main Brain must control:
 - SAFE UNKNOWN behavior
 - workflow trackers
 - future project brains
+- WebGPT Memory Module (`system/webgpt-memory-module.md`)
+
+Additional system requirements for WebGPT and reconstructability:
+
+- WebGPT Memory Module is now a core component
+- Chat-to-chat migration must use system memory
+- Project lifecycle must be reconstructable from logs
 
 This stage is required before scaling to:
 
@@ -57,6 +64,7 @@ Paths are from the `AI-brains` repository root:
 - `logs/lifecycle-log.md` — [Lifecycle log](../logs/lifecycle-log.md)
 - `system/rule-precedence.md` — [Rule precedence](rule-precedence.md)
 - `system/wiring-task-standard.md` — [Wiring task standard](wiring-task-standard.md)
+- `system/webgpt-memory-module.md` — [WebGPT Memory Module](webgpt-memory-module.md)
 
 ---
 
