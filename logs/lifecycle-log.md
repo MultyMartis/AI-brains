@@ -49,6 +49,15 @@
 - git_status: pending
 - next_action: commit and push GitHub cleanup
 
+## 2026-04-24 — MetaBOT LeadInboxProcessor architecture created
+
+- scope: Main Brain / MetaBOT
+- affected_area: first product bot architecture
+- bot: MB-Sales-LeadInboxProcessor-for-Manager-v1-MCA
+- reason: define Gmail → Sheets → AI draft → Telegram manager flow
+- git_status: pending
+- next_action: prepare n8n workflow draft and Google Sheets DB structure
+
 ## MetaBOT structure created
 
 - scope: MetaBOT
