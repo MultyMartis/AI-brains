@@ -18,8 +18,14 @@ Read (or use already-loaded excerpts of) at minimum:
 6. `AI-brains/system/v2-ai-brains-roadmap.md`
 7. `AI-brains/system/project-registry.md` — **mandatory** for current systems
 8. `AI-brains/logs/lifecycle-log.md` — **mandatory** for recent changes (tail / latest sections)
+9. `AI-brains/system/planning-layer.md` — Planning Layer spec (decomposition, handoff, SAFE UNKNOWN)
+10. `AI-brains/system/terminology-map.md` — MCA vs standard terminology
+11. `AI-brains/system/engineer-protocol.md` — engineer-class agents and protocol
+12. `AI-brains/system/agent-registry.md` — registered agents, status, locations
 
 If any file is unreadable or missing: state **FILE ACCESS UNKNOWN** for that path and continue with what you have.
+
+**FULL report requirement:** When `system/planning-layer.md` and `system/engineer-protocol.md` are readable, the report **must** include **Planning Layer status** and **Engineer Protocol status** (see section **2** bullets below). If a file is missing, say **FILE ACCESS UNKNOWN** for that slice instead of skipping silently.
 
 ---
 
@@ -47,6 +53,7 @@ After reading registry + lifecycle, **before** the numbered report sections:
 - If something is promised in roadmap but only exists as documentation, say **documented / not evidenced as implementation** instead of claiming code exists.
 - For any named capability **not** found in AI-brains (e.g. user mentions a product not in the index): respond **NOT DOCUMENTED in AI-brains** — do not fabricate.
 - Use **UNKNOWN** where registry or logs use unknown or data is missing.
+- **Planning Layer and Engineer Protocol:** when those files exist and were read, sections **1** and **2** (and **5** as needed) must state their status explicitly — not only implied via architecture; cross-check engineer agents named in `engineer-protocol.md` against rows in `agent-registry.md`.
 
 ---
 
@@ -63,11 +70,14 @@ Use exactly this markdown skeleton:
 ## 1. System identity
 
 - What MCA AI.Pack is; what `AI-brains` is; role of Main Brain v2 (from mission + architecture).
+- If `terminology-map.md` was read: one or two bullets on primary MCA terms vs standard terms (high level).
 
 ## 2. Architecture (Main Brain v2 layers)
 
 - Strategy / Control / Memory / Execution layers — bullet list from `main-brain-v2-architecture.md`.
 - Project control rule (registry, tracker, lifecycle, Git checkpoints) in brief.
+- **Planning Layer status** (required when `system/planning-layer.md` exists and was read): purpose; that it does not execute or modify files; Task Decomposer / Step Generator / Agent Selector / Validation Planner if documented; future planner agent (e.g. MB-Planner-v1) if stated; if unreadable: **FILE ACCESS UNKNOWN**.
+- **Engineer Protocol status** (required when `system/engineer-protocol.md` exists and was read): engineer-class role; forbidden actions at a high level; relationship Main Brain → engineer agents → Cursor → user; engineer agent IDs named in protocol — for each, match **planned / active / draft** and location from `agent-registry.md` when that file was read; if either file unreadable: **FILE ACCESS UNKNOWN**.
 
 ## 3. Current state (registry + lifecycle)
 
@@ -82,8 +92,9 @@ Use exactly this markdown skeleton:
 ## 5. Implemented vs planned (honest)
 
 - **Implemented (documented canon):** standards, index, architecture docs, registry, lifecycle log, rule precedence, WebGPT Memory **spec** path, packs/prompts libraries as files on disk.
+- **Agent System (when `agent-registry.md` was read):** table-style or bullet summary — which agents are active vs planned; which have folders under `system/agents/` vs UNKNOWN location; align with `agent-standard.md` if read.
 - **Planned / partial (from roadmap or architecture wording):** e.g. bridge prompts, scaling, chat-to-chat migration as **process** — only if `v2-ai-brains-roadmap.md` or `webgpt-memory-module.md` says so; note **Execution layer** mentions (e.g. agent coordination) as **architectural intent** unless you find a dedicated spec.
-- **Not found in AI-brains index:** e.g. a dedicated **Agent System** roadmap file — say **not listed in ai-brains-system-index.md** (do not invent one).
+- **Missing Layers / roadmap:** if `v2-ai-brains-roadmap.md` documents layer gaps (Planning, Tool, State, etc.), summarize honestly as documentation — not as shipped code.
 
 ## 6. How to interact with the system
 

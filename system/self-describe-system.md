@@ -55,6 +55,9 @@ When executing Self-Describe, the agent **must** prefer these sources (paths fro
 | `system/main-brain-v2-architecture.md` | Main Brain v2 layers and operating cycle |
 | `system/metacode-mission.md` | Mission and product vision |
 | `system/v2-ai-brains-roadmap.md` | System roadmap, stages, priorities |
+| `system/planning-layer.md` | Planning Layer — decomposition, handoff, SAFE UNKNOWN |
+| `system/terminology-map.md` | MCA terms mapped to standard industry terminology |
+| `system/engineer-protocol.md` | Engineer-class agents — responsibilities and protocol |
 | `system/project-registry.md` | Registered projects, paths, status, next_action |
 | `logs/lifecycle-log.md` | Chronological system and project events |
 | `system/rule-precedence.md` | Rule stack, SAFE UNKNOWN MODE |
@@ -159,6 +162,7 @@ When generating a **FULL** or **DEBUG** report, the assistant **must**:
 - **Use UNKNOWN** for registry fields explicitly marked unknown or missing file access.
 - **Rely on files, not assumptions.** Prefer quoting paths and titles over paraphrasing deep implementation detail not in docs.
 - **Agent Registry / Agent System** — if `system/agent-registry.md` exists, **Self-Describe FULL** and **DEBUG** must include Agent System status (registered agents, draft vs active, alignment with `agent-standard.md` when applicable).
+- **Planning Layer and Engineer Protocol** — if `system/planning-layer.md` and `system/engineer-protocol.md` exist, **Self-Describe FULL** and **DEBUG** must include Planning Layer status (purpose, rules, future planner agent if documented) and Engineer Protocol status (how engineer-class agents operate, named engineer agents vs registry when applicable).
 - **WebGPT Memory Module** — documented in `system/webgpt-memory-module.md` as specification and process. Do not claim automated tooling exists unless the agent has verified such files in the workspace.
 - **Execution layer** items (e.g. agent coordination) in architecture are **descriptions of intent**; separate **roadmap / implementation** must be confirmed from roadmap and repo, not invented.
 - If the user names a product (e.g. a check or pipeline) **not** present in AI-brains search results, respond **NOT DOCUMENTED in AI-brains** rather than inventing it.

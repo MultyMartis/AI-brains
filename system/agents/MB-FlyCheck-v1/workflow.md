@@ -7,6 +7,10 @@
 - project-registry
 - lifecycle-log
 - agent-registry
+- planning-layer.md
+- v2-ai-brains-roadmap.md
+- terminology-map.md
+- engineer-protocol.md
 
 2. Check:
 
@@ -37,6 +41,10 @@
 ### G. Project registry sync
 
 - `last_checked` in `project-registry` must not lag behind the latest meaningful change reflected in `lifecycle-log` (staleness = WARNING or BROKEN per severity rules)
+
+### H. Architecture layer sync
+
+- verify index, lifecycle, roadmap, and layer docs are aligned
 
 3. Output:
 

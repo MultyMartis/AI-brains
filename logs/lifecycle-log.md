@@ -122,3 +122,32 @@
 - reason: MB-FlyCheck-v1 upgraded from draft to active after first validation and workflow hardening
 - current_status: active
 - next_action: run final FlyCheck and commit active FlyCheck state
+
+## 2026-04-26 — Planning Layer and Missing Layers Roadmap added
+
+- scope: Main Brain
+- affected_area: MCA AI.Pack architecture
+- files_changed:
+  - system/planning-layer.md
+  - system/v2-ai-brains-roadmap.md
+  - system/terminology-map.md
+  - system/engineer-protocol.md
+- reason: Planning Layer was defined and missing multi-agent system layers were added to the roadmap
+- current_status: planning layer draft; missing layers tracked in roadmap
+- next_action: run FlyCheck and commit architecture roadmap update
+
+## 2026-04-26 — Planning and Engineer sync completed
+
+- scope: Main Brain
+- affected_area: MCA AI.Pack architecture / Agent System
+- files_changed:
+  - system/project-registry.md
+  - system/agent-registry.md
+  - system/self-describe-system.md
+  - system/agents/MB-FlyCheck-v1/workflow.md
+  - system/agents/MB-FlyCheck-v1/agent-card.md
+  - prompts/system/self-describe-full.txt
+  - system/agent-standard.md
+- reason: Planning Layer, Engineer Protocol, Self-Describe, FlyCheck, and Agent Registry were synchronized after FlyCheck warnings
+- current_status: planning layer draft; engineer agents registered as planned; FlyCheck architecture sync expanded
+- next_action: run FlyCheck and commit architecture roadmap update

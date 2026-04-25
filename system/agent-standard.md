@@ -176,6 +176,9 @@ List planned agents:
 
 - MB-SelfDescribeMaintainer-v1
 - MB-AgentRegistryValidator-v1
+- MB-FactoryEngineer-v1
+- MB-AgentBuilder-v1
+- MB-SystemAuditor-v1
 - MB-Scraper-v1
 - MB-SourceScanner-v1
 - MB-WorkChatObserver-v1

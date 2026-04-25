@@ -153,3 +153,47 @@ AI must ALWAYS know:
 2. Update per-project roadmaps and project-state when work resumes outside Main Brain.
 3. Choose next build focus after controls are stable: likely **MetaBOT**, or **gulp-starter** when unpaused.
 4. Implement bridge prompts (ChatGPT → Cursor) once context files are mandatory across projects.
+
+---
+
+## MCA AI.Pack Missing Layers Roadmap
+
+### Purpose
+
+Track missing or incomplete layers required to evolve MCA AI.Pack into a full multi-agent system.
+
+### Layer Status Table
+
+| Layer | Current status | Current assets | Needed next |
+|------|----------------|----------------|-------------|
+| Control Layer | active | Main Brain v2 | continue hardening |
+| Planning Layer | draft | planning-layer.md | create MB-Planner-v1 |
+| Agent Layer | active foundation | agent-standard.md, agent-registry.md, MB-FlyCheck-v1 | create Factory Engineer and next agents |
+| Tool Layer | not formalized | Git, Cursor, n8n, filesystem used manually | create tool-registry.md |
+| Memory Layer | active foundation | lifecycle-log.md, project-registry.md, WebGPT Memory spec, Self-Describe | implement stronger migration prompts |
+| State Layer | partial | project-registry.md, agent-registry.md, workflow trackers | create state-layer.md |
+| Runtime Layer | partial / external | Cursor, n8n, manual execution | create runtime-layer.md later |
+| Guardrails Layer | active foundation | FlyCheck, system-signals.md, SAFE UNKNOWN | expand validators |
+| Observability Layer | partial | lifecycle-log.md, FlyCheck reports | create observability-layer.md |
+| Policy Layer | active | rule-precedence.md, self-update-rules.md, agent-standard.md | continue enforcing |
+| Human Layer | active | user approval, Cursor prompts, Git checkpoints | keep manual approval for critical changes |
+
+### Priority Order
+
+1. Planning Layer
+2. Factory Engineer
+3. Tool Layer
+4. State Layer
+5. Observability Layer
+6. Runtime Layer
+
+### Rules
+
+- Do not build all layers at once.
+- Each layer must have:
+  - system specification
+  - registry or status source if needed
+  - at least one responsible agent if needed
+  - lifecycle log entry when implemented
+- Missing layer docs are roadmap items, not active systems.
+- Registry and lifecycle must remain source of truth.

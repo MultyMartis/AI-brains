@@ -41,6 +41,10 @@ dependencies:
 - lifecycle-log.md
 - agent-registry.md
 - system-signals.md
+- planning-layer.md
+- v2-ai-brains-roadmap.md
+- terminology-map.md
+- engineer-protocol.md
 
 related_projects:
 - MCA AI.Pack

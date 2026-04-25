@@ -17,9 +17,21 @@ This file defines the core system files of MCA AI.Pack.
 - system/main-brain-v2-architecture.md
 - system/project-architecture-principles.md
 
+## System Layers
+
+- system/planning-layer.md
+
 ## Roadmap
 
 - system/v2-ai-brains-roadmap.md
+
+## Terminology
+
+- system/terminology-map.md
+
+## Engineer Protocol
+
+- system/engineer-protocol.md
 
 ## Mission
 

@@ -10,8 +10,8 @@
 - workflow_tracker: D:\AI\AI-brains\logs\lifecycle-log.md
 - lifecycle_log: D:\AI\AI-brains\logs\lifecycle-log.md
 - last_checked: 2026-04-26
-- current_phase: FlyCheck active
-- next_action: commit active FlyCheck state and continue Factory Engineer design
+- current_phase: planning layer draft; missing layers roadmap added
+- next_action: commit architecture roadmap update and continue Factory Engineer design
 
 ## gulp-starter
 
