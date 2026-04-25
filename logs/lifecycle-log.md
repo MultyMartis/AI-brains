@@ -81,3 +81,13 @@
 - git_repo: https://github.com/MultyMartis/AI-brains.git
 - commit: d9d3f7f
 - next_action: backup n8n workflow and add OpenRouter AI analysis + Telegram notification
+
+## 2026-04-25 — MetaBOT stable Gmail label pipeline confirmed
+
+- scope: Main Brain / MetaBOT
+- affected_area: product runtime validation
+- bot: MB-Sales-LeadInboxProcessor-for-Manager-v1-MCA
+- result: Schedule → Gmail Get Many → Parser → Gmail labels → Google Sheets works
+- backup_file: D:\AI\workspace\backups\n8n\workflows\MB-Sales-LeadInboxProcessor-for-Manager-v1-MCA__2026-04-25_working-label-pipeline.json
+- git_status: pending
+- next_action: add Telegram manager notification and continue product MVP
