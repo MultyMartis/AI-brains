@@ -91,3 +91,20 @@
 - backup_file: D:\AI\workspace\backups\n8n\workflows\MB-Sales-LeadInboxProcessor-for-Manager-v1-MCA__2026-04-25_working-label-pipeline.json
 - git_status: pending
 - next_action: add Telegram manager notification and continue product MVP
+
+## 2026-04-26 — Agent System foundation
+
+- scope: Main Brain
+- affected_area: AI-brains / agent system
+- files_changed:
+  - system/agent-standard.md
+  - system/agent-registry.md
+  - system/agents/MB-FlyCheck-v1/
+- summary:
+  - Agent System foundation created
+  - `agent-standard.md` added
+  - `agent-registry.md` added
+  - `MB-FlyCheck-v1` created as first draft agent
+  - `MB-FlyCheck-v1` registered in `agent-registry`
+- current status: draft
+- next_action: validate FlyCheck and commit agent foundation

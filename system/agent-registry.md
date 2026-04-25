@@ -16,7 +16,7 @@ Central source of truth for all agents in MCA AI.Pack.
 
 | agent_id | name | type | status | owner_system | location | last_update |
 |----------|------|------|--------|--------------|----------|-------------|
-| MB-FlyCheck-v1 | Fly Check | system-agent | planned | Main Brain | UNKNOWN | - |
+| MB-FlyCheck-v1 | Fly Check | system-agent | draft | Main Brain | system/agents/MB-FlyCheck-v1 | 2026-04-26 |
 | MB-SelfDescribeMaintainer-v1 | Self Describe Maintainer | system-agent | planned | Main Brain | UNKNOWN | - |
 | MB-AgentRegistryValidator-v1 | Agent Registry Validator | system-agent | planned | Main Brain | UNKNOWN | - |
 | MB-Scraper-v1 | Scraper | data-agent | planned | Main Brain | UNKNOWN | - |
