@@ -167,8 +167,8 @@ Track missing or incomplete layers required to evolve MCA AI.Pack into a full mu
 | Layer | Current status | Current assets | Needed next |
 |------|----------------|----------------|-------------|
 | Control Layer | active | Main Brain v2 | continue hardening |
-| Planning Layer | draft | planning-layer.md | create MB-Planner-v1 |
-| Agent Layer | active foundation | agent-standard.md, agent-registry.md, MB-FlyCheck-v1, MB-FactoryEngineer-v1 draft | validate MB-FactoryEngineer-v1 draft and create next agents |
+| Planning Layer | draft | planning-layer.md, MB-Planner-v1 draft | validate MB-Planner-v1 and use Planner for task decomposition |
+| Agent Layer | active foundation | agent-standard.md, agent-registry.md, MB-FlyCheck-v1, MB-FactoryEngineer-v1 draft, MB-Planner-v1 draft | validate MB-FactoryEngineer-v1 draft and create next agents |
 | Tool Layer | not formalized | Git, Cursor, n8n, filesystem used manually | create tool-registry.md |
 | Memory Layer | active foundation | lifecycle-log.md, project-registry.md, WebGPT Memory spec, Self-Describe | implement stronger migration prompts |
 | State Layer | partial | project-registry.md, agent-registry.md, workflow trackers | create state-layer.md |

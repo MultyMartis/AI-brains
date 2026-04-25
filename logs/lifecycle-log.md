@@ -177,3 +177,32 @@
 - reason: Factory Engineer draft was synchronized with system index, roadmap, and Self-Describe FULL prompt after FlyCheck warnings
 - current_status: MB-FactoryEngineer-v1 draft aligned with registry, index, roadmap, and Self-Describe
 - next_action: commit Factory Engineer draft and naming system update
+
+## 2026-04-26 — MB-Planner-v1 created
+
+- scope: Main Brain
+- affected_area: Agent System / Planning Layer
+- files_changed:
+  - system/agents/MB-Planner-v1/README.md
+  - system/agents/MB-Planner-v1/agent-card.md
+  - system/agents/MB-Planner-v1/workflow.md
+  - system/agents/MB-Planner-v1/changelog.md
+  - system/agent-registry.md
+  - system/agent-standard.md
+  - system/ai-brains-system-index.md
+- reason: Planning Layer implementation agent created as draft
+- current_status: draft
+- next_action: validate MB-Planner-v1 with FlyCheck
+
+## 2026-04-26 — MB-Planner-v1 sync completed
+
+- scope: Main Brain
+- affected_area: Planning Layer / Agent System / Self-Describe
+- files_changed:
+  - system/v2-ai-brains-roadmap.md
+  - system/project-registry.md
+  - system/agent-standard.md
+  - prompts/system/self-describe-full.txt
+- reason: MB-Planner-v1 draft was synchronized with roadmap, project registry, agent standard, and Self-Describe after FlyCheck warnings
+- current_status: MB-Planner-v1 draft aligned with registry, index, lifecycle, roadmap, and Self-Describe
+- next_action: run FlyCheck and commit MB-Planner-v1 draft

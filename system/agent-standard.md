@@ -173,6 +173,7 @@ Explain:
 ## Draft Agents
 
 - MB-FactoryEngineer-v1
+- MB-Planner-v1
 
 ## Initial Planned Agents
 
@@ -180,6 +181,7 @@ Note:
 
 MB-FlyCheck-v1 has already been created, validated, and activated in system/agent-registry.md.
 MB-FactoryEngineer-v1 has already been created as a draft agent and registered in system/agent-registry.md.
+MB-Planner-v1 has already been created as a draft agent and registered in system/agent-registry.md.
 The remaining agents in this section are planned until their folders and agent cards are created.
 
 List planned agents:

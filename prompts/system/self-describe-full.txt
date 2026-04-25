@@ -76,7 +76,7 @@ Use exactly this markdown skeleton:
 
 - Strategy / Control / Memory / Execution layers — bullet list from `main-brain-v2-architecture.md`.
 - Project control rule (registry, tracker, lifecycle, Git checkpoints) in brief.
-- **Planning Layer status** (required when `system/planning-layer.md` exists and was read): purpose; that it does not execute or modify files; Task Decomposer / Step Generator / Agent Selector / Validation Planner if documented; future planner agent (e.g. MB-Planner-v1) if stated; if unreadable: **FILE ACCESS UNKNOWN**.
+- **Planning Layer status** (required when `system/planning-layer.md` exists and was read): purpose; that it does not execute or modify files; Task Decomposer / Step Generator / Agent Selector / Validation Planner if documented; **MB-Planner-v1:** when `agent-registry.md` was read and lists **MB-Planner-v1**, report it per registry status (**draft** / active / etc.) as the Planning Layer implementation agent; use **planned / future planner** wording only when **MB-Planner-v1** is **not** listed in the registry (then follow `planning-layer.md` for intended planner agent); if unreadable: **FILE ACCESS UNKNOWN**.
 - **Engineer Protocol status** (required when `system/engineer-protocol.md` exists and was read): engineer-class role; forbidden actions at a high level; relationship Main Brain → engineer agents → Cursor → user; engineer agent IDs named in protocol — for each, match **planned / active / draft** and location from `agent-registry.md` when that file was read; if either file unreadable: **FILE ACCESS UNKNOWN**.
 
 ## 3. Current state (registry + lifecycle)
