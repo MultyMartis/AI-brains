@@ -1,5 +1,6 @@
 agent_id: MB-FlyCheck-v1  
 agent_name: Fly Check  
+standard_name: Validator Agent  
 agent_type: system-agent  
 owner_system: Main Brain  
 

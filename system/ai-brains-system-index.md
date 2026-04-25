@@ -49,6 +49,10 @@ This file defines the core system files of MCA AI.Pack.
 - system/agents/MB-FlyCheck-v1/agent-card.md
 - system/agents/MB-FlyCheck-v1/workflow.md
 - system/agents/MB-FlyCheck-v1/changelog.md
+- system/agents/MB-FactoryEngineer-v1/README.md
+- system/agents/MB-FactoryEngineer-v1/agent-card.md
+- system/agents/MB-FactoryEngineer-v1/workflow.md
+- system/agents/MB-FactoryEngineer-v1/changelog.md
 
 ## Purpose
 

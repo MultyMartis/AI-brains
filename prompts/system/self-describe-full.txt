@@ -92,7 +92,7 @@ Use exactly this markdown skeleton:
 ## 5. Implemented vs planned (honest)
 
 - **Implemented (documented canon):** standards, index, architecture docs, registry, lifecycle log, rule precedence, WebGPT Memory **spec** path, packs/prompts libraries as files on disk.
-- **Agent System (when `agent-registry.md` was read):** table-style or bullet summary — which agents are active vs planned; which have folders under `system/agents/` vs UNKNOWN location; align with `agent-standard.md` if read.
+- **Agent System (when `agent-registry.md` was read):** table-style or bullet summary — which agents are **active / draft / planned**; which have folders under `system/agents/` (active and draft) vs **UNKNOWN** location (planned agents without folders yet); align with `agent-standard.md` if read.
 - **Planned / partial (from roadmap or architecture wording):** e.g. bridge prompts, scaling, chat-to-chat migration as **process** — only if `v2-ai-brains-roadmap.md` or `webgpt-memory-module.md` says so; note **Execution layer** mentions (e.g. agent coordination) as **architectural intent** unless you find a dedicated spec.
 - **Missing Layers / roadmap:** if `v2-ai-brains-roadmap.md` documents layer gaps (Planning, Tool, State, etc.), summarize honestly as documentation — not as shipped code.
 

@@ -168,7 +168,7 @@ Track missing or incomplete layers required to evolve MCA AI.Pack into a full mu
 |------|----------------|----------------|-------------|
 | Control Layer | active | Main Brain v2 | continue hardening |
 | Planning Layer | draft | planning-layer.md | create MB-Planner-v1 |
-| Agent Layer | active foundation | agent-standard.md, agent-registry.md, MB-FlyCheck-v1 | create Factory Engineer and next agents |
+| Agent Layer | active foundation | agent-standard.md, agent-registry.md, MB-FlyCheck-v1, MB-FactoryEngineer-v1 draft | validate MB-FactoryEngineer-v1 draft and create next agents |
 | Tool Layer | not formalized | Git, Cursor, n8n, filesystem used manually | create tool-registry.md |
 | Memory Layer | active foundation | lifecycle-log.md, project-registry.md, WebGPT Memory spec, Self-Describe | implement stronger migration prompts |
 | State Layer | partial | project-registry.md, agent-registry.md, workflow trackers | create state-layer.md |
@@ -197,3 +197,58 @@ Track missing or incomplete layers required to evolve MCA AI.Pack into a full mu
   - lifecycle log entry when implemented
 - Missing layer docs are roadmap items, not active systems.
 - Registry and lifecycle must remain source of truth.
+
+---
+
+## Universal Naming System
+
+### Purpose
+
+Unify naming across all MCA AI.Pack entities to ensure consistency, scalability, and external compatibility.
+
+### Scope
+
+Applies to:
+
+- agents
+- system layers
+- modules
+- tools
+- projects
+
+### Structure
+
+Each entity must define:
+
+- id
+- name
+- standard_name
+- type
+- owner_system
+- status
+
+### Example
+
+agent_id: MB-FactoryEngineer-v1  
+name: Factory Engineer  
+standard_name: Architect Agent  
+type: system-agent  
+owner_system: Main Brain  
+status: draft  
+
+### Rules
+
+- id is internal and stable
+- name is for human readability
+- standard_name maps to industry terms
+- existing entities are NOT renamed immediately
+- migration is gradual and controlled
+
+### Next step
+
+Apply naming structure to:
+
+- agent-standard.md
+- agent-registry.md
+- project-registry.md
+- future layers and modules

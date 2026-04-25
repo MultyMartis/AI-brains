@@ -74,3 +74,23 @@ This file ensures:
   - documentation
   - onboarding
   - external alignment
+
+---
+
+## Naming Model
+
+MCA uses a dual-layer naming system:
+
+| Field | Meaning |
+|------|--------|
+| id | internal unique identifier |
+| name | human-readable name |
+| standard_name | industry equivalent |
+| type | entity type |
+| owner_system | controlling system |
+| status | lifecycle state |
+
+Purpose:
+
+- keep internal clarity
+- stay compatible with external ecosystems

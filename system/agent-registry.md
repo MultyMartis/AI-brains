@@ -19,7 +19,7 @@ Central source of truth for all agents in MCA AI.Pack.
 | MB-FlyCheck-v1 | Fly Check | system-agent | active | Main Brain | system/agents/MB-FlyCheck-v1 | 2026-04-26 |
 | MB-SelfDescribeMaintainer-v1 | Self Describe Maintainer | system-agent | planned | Main Brain | UNKNOWN | - |
 | MB-AgentRegistryValidator-v1 | Agent Registry Validator | system-agent | planned | Main Brain | UNKNOWN | - |
-| MB-FactoryEngineer-v1 | Factory Engineer | system-agent | planned | Main Brain | UNKNOWN | - |
+| MB-FactoryEngineer-v1 | Factory Engineer | system-agent | draft | Main Brain | system/agents/MB-FactoryEngineer-v1 | 2026-04-26 |
 | MB-AgentBuilder-v1 | Agent Builder | system-agent | planned | Main Brain | UNKNOWN | - |
 | MB-SystemAuditor-v1 | System Auditor | system-agent | planned | Main Brain | UNKNOWN | - |
 | MB-Scraper-v1 | Scraper | data-agent | planned | Main Brain | UNKNOWN | - |

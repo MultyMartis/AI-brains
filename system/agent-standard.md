@@ -87,6 +87,7 @@ Define required fields:
 
 - agent_id
 - agent_name
+- standard_name
 - agent_type
 - owner_system
 - status
@@ -101,6 +102,11 @@ Define required fields:
 - lifecycle_log
 - registry_status
 - last_reviewed
+
+**standard_name**
+
+- maps agent to industry-equivalent role
+- required for all system agents
 
 ## Agent Statuses
 
@@ -164,19 +170,22 @@ Explain:
 
 - MB-FlyCheck-v1
 
+## Draft Agents
+
+- MB-FactoryEngineer-v1
+
 ## Initial Planned Agents
 
 Note:
 
 MB-FlyCheck-v1 has already been created, validated, and activated in system/agent-registry.md.
-
+MB-FactoryEngineer-v1 has already been created as a draft agent and registered in system/agent-registry.md.
 The remaining agents in this section are planned until their folders and agent cards are created.
 
 List planned agents:
 
 - MB-SelfDescribeMaintainer-v1
 - MB-AgentRegistryValidator-v1
-- MB-FactoryEngineer-v1
 - MB-AgentBuilder-v1
 - MB-SystemAuditor-v1
 - MB-Scraper-v1

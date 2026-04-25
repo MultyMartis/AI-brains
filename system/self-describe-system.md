@@ -161,7 +161,10 @@ When generating a **FULL** or **DEBUG** report, the assistant **must**:
 - **Do not hallucinate.** If a subsystem is not described in AI-brains files, say **NOT DOCUMENTED in AI-brains** or **UNKNOWN**, not a plausible story.
 - **Use UNKNOWN** for registry fields explicitly marked unknown or missing file access.
 - **Rely on files, not assumptions.** Prefer quoting paths and titles over paraphrasing deep implementation detail not in docs.
-- **Agent Registry / Agent System** — if `system/agent-registry.md` exists, **Self-Describe FULL** and **DEBUG** must include Agent System status (registered agents, draft vs active, alignment with `agent-standard.md` when applicable).
+- **Agent Registry / Agent System** — if `system/agent-registry.md` exists, **Self-Describe FULL** and **DEBUG** must include Agent System status:
+  - **active** agents
+  - **draft** agents
+  - **planned** agents
 - **Planning Layer and Engineer Protocol** — if `system/planning-layer.md` and `system/engineer-protocol.md` exist, **Self-Describe FULL** and **DEBUG** must include Planning Layer status (purpose, rules, future planner agent if documented) and Engineer Protocol status (how engineer-class agents operate, named engineer agents vs registry when applicable).
 - **WebGPT Memory Module** — documented in `system/webgpt-memory-module.md` as specification and process. Do not claim automated tooling exists unless the agent has verified such files in the workspace.
 - **Execution layer** items (e.g. agent coordination) in architecture are **descriptions of intent**; separate **roadmap / implementation** must be confirmed from roadmap and repo, not invented.

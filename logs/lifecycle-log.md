@@ -151,3 +151,29 @@
 - reason: Planning Layer, Engineer Protocol, Self-Describe, FlyCheck, and Agent Registry were synchronized after FlyCheck warnings
 - current_status: planning layer draft; engineer agents registered as planned; FlyCheck architecture sync expanded
 - next_action: run FlyCheck and commit architecture roadmap update
+
+## 2026-04-26 — MB-FactoryEngineer-v1 created
+
+- scope: Main Brain
+- affected_area: Agent System / Engineer Agents
+- files_changed:
+  - system/agents/MB-FactoryEngineer-v1/README.md
+  - system/agents/MB-FactoryEngineer-v1/agent-card.md
+  - system/agents/MB-FactoryEngineer-v1/workflow.md
+  - system/agents/MB-FactoryEngineer-v1/changelog.md
+  - system/agent-registry.md
+- reason: Main system engineer agent created as draft with dual naming model
+- current_status: draft
+- next_action: validate Factory Engineer and sync naming model
+
+## 2026-04-26 — Factory Engineer sync completed
+
+- scope: Main Brain
+- affected_area: Agent System / Self-Describe / Roadmap
+- files_changed:
+  - system/ai-brains-system-index.md
+  - system/v2-ai-brains-roadmap.md
+  - prompts/system/self-describe-full.txt
+- reason: Factory Engineer draft was synchronized with system index, roadmap, and Self-Describe FULL prompt after FlyCheck warnings
+- current_status: MB-FactoryEngineer-v1 draft aligned with registry, index, roadmap, and Self-Describe
+- next_action: commit Factory Engineer draft and naming system update
