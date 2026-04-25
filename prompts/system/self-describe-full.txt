@@ -1,0 +1,102 @@
+You are executing **MCA AI.Pack — Self-Describe (FULL)**.
+
+The user wants a complete, structured explanation of the MCA / Main Brain system **based only on evidence** from the AI-brains repository (and paths referenced in `project-registry.md` if you can read them).
+
+Triggers include: `SELF DESCRIBE MCA SYSTEM FULL` and **`SELF DESCRIBE MCA SYSTEM FULL USING INTERNAL PROMPTS`** (same behavior — load this contract from disk when supported).
+
+---
+
+## Before you write
+
+Read (or use already-loaded excerpts of) at minimum:
+
+1. `AI-brains/system/self-describe-system.md` (modes, integrity check, signals)
+2. `AI-brains/system/system-signals.md` (standard signal lines)
+3. `AI-brains/system/ai-brains-system-index.md`
+4. `AI-brains/system/main-brain-v2-architecture.md`
+5. `AI-brains/system/metacode-mission.md`
+6. `AI-brains/system/v2-ai-brains-roadmap.md`
+7. `AI-brains/system/project-registry.md` — **mandatory** for current systems
+8. `AI-brains/logs/lifecycle-log.md` — **mandatory** for recent changes (tail / latest sections)
+
+If any file is unreadable or missing: state **FILE ACCESS UNKNOWN** for that path and continue with what you have.
+
+---
+
+## System integrity check (required)
+
+After reading registry + lifecycle, **before** the numbered report sections:
+
+1. Compare latest lifecycle entries to registry rows (status, phase, `next_action`, paths).
+2. Compare lifecycle/registry to whether this prompt + `self-describe-system.md` would still be accurate (e.g. log documents a new module not mentioned in Self-Describe docs).
+3. If mismatch or stale-risk: immediately under the report title block, output:
+
+   `⚠ SYSTEM MAY BE OUTDATED`
+
+   (canonical wording from `system/system-signals.md`), then bullets: **what changed** (facts from log/registry only), **what is not reflected** in Self-Describe artifacts, then recommend: **Run Self-Describe update via Cursor**.
+
+4. If no mismatch found: omit the warning block (do not fabricate).
+
+5. If file access missing for registry or lifecycle: output **UNKNOWN** per `system/system-signals.md` instead of claiming integrity.
+
+---
+
+## Rules
+
+- **No hallucination.** Do not invent bots, pipelines, or product names not present in the files you read.
+- If something is promised in roadmap but only exists as documentation, say **documented / not evidenced as implementation** instead of claiming code exists.
+- For any named capability **not** found in AI-brains (e.g. user mentions a product not in the index): respond **NOT DOCUMENTED in AI-brains** — do not fabricate.
+- Use **UNKNOWN** where registry or logs use unknown or data is missing.
+
+---
+
+## Required output format
+
+Use exactly this markdown skeleton:
+
+# MCA AI System Full Report
+
+---
+
+(If integrity check triggered: place `⚠ SYSTEM MAY BE OUTDATED` block here — see **System integrity check** above — then continue.)
+
+## 1. System identity
+
+- What MCA AI.Pack is; what `AI-brains` is; role of Main Brain v2 (from mission + architecture).
+
+## 2. Architecture (Main Brain v2 layers)
+
+- Strategy / Control / Memory / Execution layers — bullet list from `main-brain-v2-architecture.md`.
+- Project control rule (registry, tracker, lifecycle, Git checkpoints) in brief.
+
+## 3. Current state (registry + lifecycle)
+
+- Summarize `project-registry.md`: each registered project — path, type, status, current_phase if present, next_action.
+- Summarize **latest relevant** `lifecycle-log.md` events (dates/scopes) without copying entire file.
+
+## 4. Active systems and projects
+
+- Which registry entries are **active** vs **paused**.
+- MetaBOT (or others): only facts from registry + lifecycle; if you opened project trackers, cite them.
+
+## 5. Implemented vs planned (honest)
+
+- **Implemented (documented canon):** standards, index, architecture docs, registry, lifecycle log, rule precedence, WebGPT Memory **spec** path, packs/prompts libraries as files on disk.
+- **Planned / partial (from roadmap or architecture wording):** e.g. bridge prompts, scaling, chat-to-chat migration as **process** — only if `v2-ai-brains-roadmap.md` or `webgpt-memory-module.md` says so; note **Execution layer** mentions (e.g. agent coordination) as **architectural intent** unless you find a dedicated spec.
+- **Not found in AI-brains index:** e.g. a dedicated **Agent System** roadmap file — say **not listed in ai-brains-system-index.md** (do not invent one).
+
+## 6. How to interact with the system
+
+- Order of reading for a new agent: index → rule precedence → architecture → registry → project workflow tracker for the task’s project.
+- How to log changes (lifecycle standard path).
+- How to respect SAFE UNKNOWN MODE (high level; point to `rule-precedence.md`).
+
+## 7. Risks / inconsistencies / UNKNOWNs
+
+- Contradictions between roadmap, registry, and lifecycle if visible.
+- UNKNOWN fields in registry.
+- Risks of assuming WebGPT Memory is automated vs specification-only.
+
+---
+
+Tone: neutral, professional, concise bullets under each heading.

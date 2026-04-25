@@ -1,0 +1,117 @@
+# QUICK ALIASES
+
+WHOAMI FULL
+= SELF DESCRIBE MCA SYSTEM FULL USING INTERNAL PROMPTS
+
+WHOAMI SHORT
+= SELF DESCRIBE MCA SYSTEM SHORT USING INTERNAL PROMPTS
+
+WHOAMI DEBUG
+= SELF DESCRIBE MCA SYSTEM DEBUG USING INTERNAL PROMPTS
+
+---
+
+# QUICK COMMAND (RECOMMENDED)
+
+Paste **only** this line (no manual copy of prompt files):
+
+```
+SELF DESCRIBE MCA SYSTEM FULL USING INTERNAL PROMPTS
+```
+
+**Meaning:** the assistant **must** behave as if `AI-brains/prompts/system/self-describe-full.txt` were loaded: read canon from disk (when the environment allows), execute **System Integrity Check** per `AI-brains/system/self-describe-system.md`, and emit the standard report.
+
+**Hard reads (when file access exists):**
+
+- `AI-brains/prompts/system/self-describe-full.txt` (instruction contract)
+- `AI-brains/system/project-registry.md`
+- `AI-brains/logs/lifecycle-log.md`
+- `AI-brains/system/main-brain-v2-architecture.md`
+- plus other sources listed in `self-describe-system.md` / `self-describe-full.txt`
+
+If the AI **cannot** read files (e.g. plain ChatGPT without attachments): say **FILE ACCESS UNKNOWN**, then fall back to pasting `self-describe-full.txt` manually (see **Usage (FULL)** below).
+
+---
+
+# COMMAND: WHO AM I (MCA SYSTEM)
+
+## Purpose
+
+Get a structured understanding of the MCA AI.Pack / Main Brain system quickly — architecture, current state, active vs paused work, gaps, and risks — without guessing.
+
+---
+
+## Usage (FULL)
+
+1. Open **ChatGPT** or **Cursor**.
+2. Paste this line:
+
+   SELF DESCRIBE MCA SYSTEM FULL
+
+3. Immediately after, paste the **full** contents of:
+
+   `AI-brains/prompts/system/self-describe-full.txt`
+
+4. Send. The assistant follows the instructions inside that file and uses canonical `AI-brains` sources.
+
+---
+
+## Usage (SHORT)
+
+1. Paste:
+
+   SELF DESCRIBE MCA SYSTEM SHORT
+
+2. Then paste the contents of:
+
+   `AI-brains/prompts/system/self-describe-short.txt`
+
+3. Send.
+
+---
+
+## Usage (DEBUG)
+
+1. Paste:
+
+   SELF DESCRIBE MCA SYSTEM DEBUG
+
+2. Paste `self-describe-full.txt` (same as FULL).
+
+3. The assistant applies **DEBUG** behavior defined in `AI-brains/system/self-describe-system.md` (FULL output plus files read, contradictions, gaps).
+
+---
+
+## Important
+
+Use **WHO AM I** / Self-Describe **after**:
+
+- a long pause in work  
+- starting a **new chat**  
+- **switching** project or repo focus  
+- confusion about rules, scope, or what is canonical  
+
+If the system **changed** in a critical way (new module, architecture, registry contract — see `AI-brains/system/self-update-rules.md`):
+
+- **Re-run FULL** (prefer **QUICK COMMAND** in Cursor) so answers match current files.
+
+---
+
+## Result
+
+You should receive:
+
+- system identity and architecture (Main Brain v2)  
+- current state from registry and lifecycle (as read)  
+- active vs paused projects / systems  
+- honest **implemented vs planned** split  
+- how to interact (read order, logging, SAFE UNKNOWN)  
+- risks and UNKNOWNs  
+- **integrity signals** when applicable (`AI-brains/system/system-signals.md`)
+
+---
+
+## One-line reminder
+
+**Preferred:** `SELF DESCRIBE MCA SYSTEM FULL USING INTERNAL PROMPTS` in environments with repo file access.  
+**Fallback:** trigger phrase + paste the matching prompt file = Self-Describe.
