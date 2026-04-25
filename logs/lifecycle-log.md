@@ -108,3 +108,17 @@
   - `MB-FlyCheck-v1` registered in `agent-registry`
 - current status: draft
 - next_action: validate FlyCheck and commit agent foundation
+
+## 2026-04-26 — MB-FlyCheck-v1 activated
+
+- scope: Main Brain
+- affected_area: Agent System / FlyCheck
+- files_changed:
+  - system/agents/MB-FlyCheck-v1/README.md
+  - system/agents/MB-FlyCheck-v1/agent-card.md
+  - system/agents/MB-FlyCheck-v1/workflow.md
+  - system/agents/MB-FlyCheck-v1/changelog.md
+  - system/agent-registry.md
+- reason: MB-FlyCheck-v1 upgraded from draft to active after first validation and workflow hardening
+- current_status: active
+- next_action: run final FlyCheck and commit active FlyCheck state

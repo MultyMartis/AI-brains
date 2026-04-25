@@ -160,17 +160,20 @@ Explain:
 - User approves critical changes.
 - MetaBOT bots may become runtime-agents if registered.
 
+## Active Agents
+
+- MB-FlyCheck-v1
+
 ## Initial Planned Agents
 
 Note:
 
-MB-FlyCheck-v1 has already been created as a draft agent and registered in system/agent-registry.md.
+MB-FlyCheck-v1 has already been created, validated, and activated in system/agent-registry.md.
 
 The remaining agents in this section are planned until their folders and agent cards are created.
 
 List planned agents:
 
-- MB-FlyCheck-v1
 - MB-SelfDescribeMaintainer-v1
 - MB-AgentRegistryValidator-v1
 - MB-Scraper-v1
