@@ -206,3 +206,31 @@
 - reason: MB-Planner-v1 draft was synchronized with roadmap, project registry, agent standard, and Self-Describe after FlyCheck warnings
 - current_status: MB-Planner-v1 draft aligned with registry, index, lifecycle, roadmap, and Self-Describe
 - next_action: run FlyCheck and commit MB-Planner-v1 draft
+
+## 2026-04-26 — MB-AgentBuilder-v1 created
+
+- scope: Main Brain
+- affected_area: Agent System / Agent Builder
+- files_changed:
+  - system/agents/MB-AgentBuilder-v1/README.md
+  - system/agents/MB-AgentBuilder-v1/agent-card.md
+  - system/agents/MB-AgentBuilder-v1/workflow.md
+  - system/agents/MB-AgentBuilder-v1/changelog.md
+  - system/agent-registry.md
+  - system/agent-standard.md
+  - system/ai-brains-system-index.md
+- reason: Agent Builder draft created to support standard agent scaffolding
+- current_status: draft
+- next_action: validate MB-AgentBuilder-v1 with FlyCheck
+
+## 2026-04-26 — MB-AgentBuilder-v1 sync completed
+
+- scope: Main Brain
+- affected_area: Agent System / Roadmap / Project Registry
+- files_changed:
+  - system/v2-ai-brains-roadmap.md
+  - system/project-registry.md
+  - system/agent-standard.md
+- reason: MB-AgentBuilder-v1 draft was synchronized with roadmap, project registry, and agent standard after FlyCheck warnings
+- current_status: MB-AgentBuilder-v1 draft aligned with registry, index, lifecycle, roadmap, and agent standard
+- next_action: run FlyCheck and commit MB-AgentBuilder-v1 draft

@@ -10,8 +10,8 @@
 - workflow_tracker: D:\AI\AI-brains\logs\lifecycle-log.md
 - lifecycle_log: D:\AI\AI-brains\logs\lifecycle-log.md
 - last_checked: 2026-04-26
-- current_phase: Planning Layer draft agent created
-- next_action: validate MB-Planner-v1 and continue Factory Engineer design
+- current_phase: Agent Builder draft agent created
+- next_action: validate MB-AgentBuilder-v1 and continue Factory Engineer design
 
 ## gulp-starter
 

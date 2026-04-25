@@ -57,6 +57,10 @@ This file defines the core system files of MCA AI.Pack.
 - system/agents/MB-Planner-v1/agent-card.md
 - system/agents/MB-Planner-v1/workflow.md
 - system/agents/MB-Planner-v1/changelog.md
+- system/agents/MB-AgentBuilder-v1/README.md
+- system/agents/MB-AgentBuilder-v1/agent-card.md
+- system/agents/MB-AgentBuilder-v1/workflow.md
+- system/agents/MB-AgentBuilder-v1/changelog.md
 
 ## Purpose
 
